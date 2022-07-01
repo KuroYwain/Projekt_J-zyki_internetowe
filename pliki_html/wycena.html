@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta</title>
+    <link rel="stylesheet" href="pliki_css/wycena.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  
+   <nav class="navbar">
+    <div class="navbar__container">
+        <a href="/pliki_html/index.html" id="navbar__logo">BN</a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <ul class="navbar__menu">
+                <li class="navbar__btn">
+                    <a href="/pliki_html/index.html" class="navbar__links">START</a>
+                    
+                </li>
+                <li class="navbar__btn">
+                    <a href="/pliki_html/oferta.html" class="navbar__links">OFERTA</a>
+                    
+                </li>
+                <li class="navbar__btn">
+                    <a href="/pliki_html/wycena.html" class="navbar__links">WYCENA</a>
+                    
+                </li>
+                <li class="navbar__btn">
+                    <a href="/pliki_html/studia.html" class="navbar__links">WYKSZTAŁCENIE</a>
+                    
+                </li>
+                <li class="navbar__btn">
+                    <a href="/pliki_html/kontakt.html" class="navbar__links">KONTAKT</a>
+                    
+                </li>
+               
+            </ul>
+        </ul>
+    </div>
+   </nav>
+
+<div class="wycena">
+   
+  <div class="lewo">
+        <h1> W CELU UŁATWIENIA WSPÓPRACY W SZYBKI I PROSTY MOŻESZ SPOSÓB SPRAWDZIĆ, JAKI JEST KOSZT MOJEJ USŁUGI W PRZYPADKU TWOICH KRYTERIII EWENTUALNIE PORÓWNAĆ
+            Z INNYMI OFERAMI, STWORZYŁEM FORMULARZ WEDŁUG SWOICH WYTYCZNYCH, JAKIE UWZGLEDNIAM PRZY SPORZĄDZANIU 
+            KOSZTORYSU STRONY DLA CIEBIE.</h1></div>
+
+<div class="wycena__form" class="form-group">    
+<form action="oblicz" method="post">
+    <br> <h3>FORMULARZ:</h3><br>
+   <p> Ilość podstron: </p><input type="number" id="pod" value="1"><br><br>
+   
+   
+
+       <label>Typ strony:</label>
+
+       <select id="typ">
+          <option value="1">Aplikacja webowa</option>
+          <option value="2">Strona internetowa</option>
+          <option value="3">Sklep internetowy</option>
+          
+       </select>
+      <div> Koszt stworzenia strony to <input type="text" name="" id="sum" disabled></div>
+   </div>  
+   <button type="button" class="btn btn-secondary" onclick="dodawanie()" >Oblicz</button>
+   
+   
+  
+  
+</form>
+
+
+
+
+</div> 
+
+
+   <script src="pliki_js/wycena.js"></script>
+
+</body>
+</html>
