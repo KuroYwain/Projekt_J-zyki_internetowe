@@ -46,36 +46,39 @@
     </div>
    </nav>
 
-<div class="wycena">
+<div class="main">
    
-  <div class="lewo">
-        <h1> W CELU UŁATWIENIA WSPÓPRACY W SZYBKI I PROSTY MOŻESZ SPOSÓB SPRAWDZIĆ, JAKI JEST KOSZT MOJEJ USŁUGI W PRZYPADKU TWOICH KRYTERIII EWENTUALNIE PORÓWNAĆ
-            Z INNYMI OFERAMI, STWORZYŁEM FORMULARZ WEDŁUG SWOICH WYTYCZNYCH, JAKIE UWZGLEDNIAM PRZY SPORZĄDZANIU 
-            KOSZTORYSU STRONY DLA CIEBIE.</h1></div>
+  <div class="main__lewo">
+        <h1> ABY OSZCZĘDZIĆ MÓJ I TWÓJ CZAS, PRZYGOTOWAŁEM FORMULARZ KTÓRY WEDŁUG MOICH WYTYCZNYCH POZWOLI OBLICZYĆ KOSZT USŁUGI KTÓRĄ MAM DLA CIEBIE WYKONAĆ
 
-<div class="wycena__form" class="form-group">    
-<form action="oblicz" method="post">
-    <br> <h3>FORMULARZ:</h3><br>
-   <p> Ilość podstron: </p><input type="number" id="pod" value="1"><br><br>
-   
-   
+        </h1>
+       
+        <form action="oblicz" method="post">
+            <h1>FORMULARZ:</h1><br>
+           <p> Ilość podstron: </p><input type="number" id="pod" value="1"><br><br>
+           
+           
+        
+               <label>Typ strony:</label>
+        
+               <select id="typ">
+                  <option value="1">Aplikacja webowa</option>
+                  <option value="2">Strona internetowa</option>
+                  <option value="3">Sklep internetowy</option>
+                  
+               </select>
+              <div> Koszt stworzenia strony to <input type="text" name="" id="sum" disabled></div>
+           
+           <button type="button" class="btn btn-secondary" onclick="dodawanie()" >Oblicz</button>
+        </form>
+        </div>
 
-       <label>Typ strony:</label>
-
-       <select id="typ">
-          <option value="1">Aplikacja webowa</option>
-          <option value="2">Strona internetowa</option>
-          <option value="3">Sklep internetowy</option>
-          
-       </select>
-      <div> Koszt stworzenia strony to <input type="text" name="" id="sum" disabled></div>
-   </div>  
-   <button type="button" class="btn btn-secondary" onclick="dodawanie()" >Oblicz</button>
+<div class="wycena__form" class="form-group">   <br> 
    
-   
+</div> 
   
   
-</form>
+
 
 
 

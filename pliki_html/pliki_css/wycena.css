@@ -2,9 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    background-color: #5c5c5c;
-    color: #cfcfcf;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: black;
 }
 .navbar{
     background-color: black;
@@ -144,114 +144,33 @@ fa-gem{
 .navbar__btn{
     padding: 2rem;
 }
-.button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 80px;
-    margin: 0;
-}
+
 
 .navbar__toggle.bar{
     display: block;
     cursor: pointer;
 }
 
-#mobile-menu.is-active .bar:nth-child(2){
-    opacity: 0;
+
+
+.main{
+    margin: 50px;
+    column-count: 2;
+    box-align: center;
 }
-#mobile-menu.is-active .bar:nth-child(1){
-    transform: translateY(8px) rotate(45deg);
-}
-#mobile-menu.is-active .bar:nth-child(3){
-    transform: translateY(-8px) rotate(-45deg);
-}
-.wycena{
-    min-width: 1000px;
-    font-family: 'Times New Roman', Times, serif;
-    display: grid;
-    align-items: center;
-    justify-self: center;
-    margin: 0 auto;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 50px 50px;
-    
-   
+.main__lewo{
+    box-align: left;
+    margin: 30px 20px 5px 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
 }
 
-.lewo h1{
-    font-size: rem;
-    background-image: linear-gradient(to top,#909090 0%,#ffffff 100%);
-    background-size: 100%;
-    float: left;
-    width: 60%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color:transparent;
-    -moz-text-fill-color:transparent;
+.main__form {
+    box-align: right;
 }
 
-
-.wycena__form {
-   
-    float: left;
-    width: 40%;
-    padding: auto;
- }
-
-
-
-#other {
-    
-    background-color: black;
-    text-align:center;
-    font-size: 25px;
+p {
+box-align: justify;
+margin-top: 60px;
+font-size: 20px;
 }
-@media screen and (max-width: 768px){
-    .wycena__container{
-        display: grid;
-        grid-template-columns: auto;
-        align-items: center;
-        justify-self: center;
-        width: 100%;
-        margin: 0 auto;
-        height: 90vh;
-
-    }
-    .wycena__content{
-        text-align: center;
-        margin-bottom: 4rem;
-    }
-    .wycena__content h1 {
-        font-size: 2.5rem;
-        margin-top: 2rem;
-    }
-    .wycena__content h2{
-        font-size:  3rem;
-    }
-    .wycena__content p{
-        margin-top: 1rem;
-        font-size: 1.5rem;
-    }
-}
-@media screen and (max-width: 480px) {
-    .wycena__content h1 {
-        font-size: 2rem;
-        margin-top: 3rem;
-    }
-    .wycena__content h2{
-        font-size:  2rem;
-    }
-    .wycena__content p{
-        margin-top: 2rem;
-        font-size: 1.51rem;
-    }
-    
-}
-
-
-
